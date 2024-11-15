@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "shearpressure-testing"
+version = "0.0.0"
+description = "ShearPressure Sensor Testing Environment"
+authors = ["Lilly Rizvi <rizvi.l@northeastern.edu>"]
+readme = "README.md"
+packages = [{include = "shearpressure_testing"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+sorcery = "^0.2.2"
+matplotlib = "^3.9.0"
+scipy = "^1.13.1"
+PyVISA = "^1.14.1"
+PyVISA-py = "^0.7.2"
+pandas = "^2.2.2"
+Pint-Pandas = "^0.5"
+pyusb = "^1.2.1"
+traces = "^0.6.3"
+ipywidgets = "^8.1.3"
+ipympl = "^0.9.4"
+watchdog = "^4.0.1"
+ntplib = "^0.4.0"
+tifffile = "^2024.9.20"
+pytesseract = "^0.3.13"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "*"
+ipykernel = "*"
+poetry-kernel = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
