@@ -138,7 +138,7 @@ lines   = []
 # Plot R/P
 for (cycle, loading), gf in data[0].dfdq.dropna().groupby(['Cycle', 'Loading']):
     if cycle == 2:
-        plot = axes[0].plot(gf.Pressure, gf.Resistance, lw=1, color=palette[0], label='This sensor')
+        plot = axes[0].plot(gf.Pressure, gf.Resistance, lw=1, color=palette[0], label='31-Beam Sensor')
         if loading:
             lines += plot
 
